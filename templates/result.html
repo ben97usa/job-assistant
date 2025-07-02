@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Optimized Resume</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="result-container">
+    <h2>Optimized Resume</h2>
+    <pre>{{ cover_letter }}</pre>
+
+    <!-- 🔄 Try Again button -->
+    <div style="text-align: center; margin-top: 30px;">
+      <a class="btn" href="/">← Try Again with Another Job</a>
+    </div>
+  </div>
+</body>
+</html>

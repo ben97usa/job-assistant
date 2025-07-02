@@ -1,0 +1,117 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 30px;
+}
+
+h2 {
+  color: #2c3e50;
+  text-align: center;
+}
+
+form {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
+/* --- RESUME PAGE STYLING --- */
+
+.result-container {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.result-container h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+.result-container pre {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  padding: 20px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  border-radius: 6px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.result-container a {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.result-container a:hover {
+  text-decoration: underline;
+}
+
+
+.btn {
+  background-color: transparent;
+  color: white;
+  padding: 12px 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Job Assistant</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Job Assistant</h1>
+    <form action="/generate" method="POST" enctype="multipart/form-data">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" value="{{ name or '' }}" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" value="{{ email or '' }}" required>
+
+      <label for="summary">Professional Summary:</label>
+      <textarea id="summary" name="summary" rows="3">{{ summary or '' }}</textarea>
+
+      <label for="jobdesc">Job Description:</label>
+      <textarea id="jobdesc" name="jobdesc" rows="4">{{ jobdesc or '' }}</textarea>
+
+      <label for="resume">Upload Resume (.pdf or .docx):</label>
+      <input type="file" id="resume" name="resume">
+
+      <div class="button-group">
+        <button type="submit" name="action" value="optimize">🛠 Optimize Resume</button>
+        <button type="submit" formaction="/learn" formmethod="POST">🧠 Learn to Write Resume</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
